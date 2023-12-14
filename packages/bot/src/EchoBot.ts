@@ -23,7 +23,7 @@ export default class EchoBot extends ActivityHandler {
 
     this.onMembersAdded(async (context, next) => {
       const membersAdded = context.activity.membersAdded || [];
-      const welcomeText = 'Hello and welcome!';
+      const welcomeText = 'Hello and welcome 6!';
 
       for (const { id } of membersAdded) {
         if (id !== context.activity.recipient.id) {
