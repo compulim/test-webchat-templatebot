@@ -1,0 +1,16 @@
+{
+  "name": "@npm-workspace/bot",
+  "version": "0.0.0-0",
+  "license": "MIT",
+  "private": true,
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup ./src/index.ts",
+    "precommit": "eslint .",
+    "scaffold": "npm install --save botbuilder@latest dotenv@latest pretty-ms@latest && npm install --save-dev tsup@latest"
+  }
+}
